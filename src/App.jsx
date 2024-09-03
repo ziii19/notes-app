@@ -28,7 +28,6 @@ function App() {
     );
   };
 
-  // Handle scroll event
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -55,8 +54,6 @@ function App() {
         </div>
       </div>
       <div className="container mx-auto p-8 pt-24">
-        {" "}
-        {/* Added pt-24 to account for fixed header */}
         <SearchBar query={query} setQuery={setQuery} />
         <NoteForm addNote={addNote} />
         <NoteList
