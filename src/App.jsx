@@ -1,14 +1,14 @@
 /** @format */
 
 import React, { useState, useEffect } from "react";
-import { initialData } from "./utils";
+import { getInitialData } from "./utils";
 import NoteList from "./components/NoteList";
 import NoteForm from "./components/NoteFrom";
 import SearchBar from "./components/SearchBar";
 import ArchivedNotes from "./components/ArchivedNote";
 
 function App() {
-  const [notes, setNotes] = useState(initialData);
+  const [notes, setNotes] = useState(getInitialData);
   const [query, setQuery] = useState("");
   const [scrolled, setScrolled] = useState(false);
 
